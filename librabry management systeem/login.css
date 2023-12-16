@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background {
+    position: relative;
+}
+
+.blur-container {
+    background-image: url('https://i2-prod.mirror.co.uk/incoming/article13150515.ece/ALTERNATES/s1227b/0_PAY-Clock-over-door-to-Honby-library-Liverpool-central-library-Picton-reading-rooms.jpg'); /* Replace 'your-background-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+header {
+    position: center;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
+
+.login-container {
+    position: absolute;
+    top: 70%; /* Adjust the top position as needed */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    text-align: center;
+}
+
+.login-container h2 {
+    text-align: center;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container label {
+    margin-bottom: 8px;
+}
+
+.login-container input {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.login-container button {
+    background-color: #ffc107; /* Yellow color */
+    color: #333;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+}
